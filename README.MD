@@ -1,1 +1,1 @@
-[https://nickluck8.github.io/modal.github.io/]
+(https://nickluck8.github.io/modal.github.io/)
