@@ -9,15 +9,15 @@
     opacity: 0;
     pointer-events: none;
     text-align: center;
+    transition: opacity 2s;
 
-    /*transition: width 2s, height 2s, background-color 2s, transform 2s;*/
 }
 
 .modal-window:target {
     opacity: 1;
     pointer-events: auto;
-    transition: 1s;
-    left: 0;
+    /*transition: 1s;*/
+    /*left: 0;*/
 }
 
 .modal-window > div {
@@ -25,6 +25,7 @@
     position: relative;
     margin: 10% auto;
     background: #fff;
+    /*transition: width 2s, height 2s, background-color 2s, transform 2s;*/
 }
 
 .ok {
@@ -40,8 +41,8 @@ body {
 
 .open-modal {
     border: 2px solid blue;
-    width: 50px;
-    height: 30px;
+    /*width: 50px;*/
+    /*height: 30px;*/
     text-align: center;
     text-decoration: none;
 }
@@ -51,8 +52,19 @@ body {
     border: 2px solid white;
 }
 
-/*.test{*/
-    /*transition-delay: 1s;*/
-    /*transition: width 2s;*/
+.test {
+    opacity: 1;
+    animation-name: test-frame;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
 
-/*}*/
+@keyframes test-frame {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
