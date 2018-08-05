@@ -9,11 +9,15 @@
     opacity: 0;
     pointer-events: none;
     text-align: center;
+
+    /*transition: width 2s, height 2s, background-color 2s, transform 2s;*/
 }
 
 .modal-window:target {
     opacity: 1;
     pointer-events: auto;
+    transition: 1s;
+    left: 0;
 }
 
 .modal-window > div {
@@ -23,18 +27,18 @@
     background: #fff;
 }
 
-.ok{
+.ok {
     display: flex;
     justify-content: center;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     margin-top: 20%;
 }
 
-.open-modal{
+.open-modal {
     border: 2px solid blue;
     width: 50px;
     height: 30px;
@@ -42,7 +46,13 @@ body{
     text-decoration: none;
 }
 
-.open-modal:hover{
+.open-modal:hover {
     background: #29cadf;
     border: 2px solid white;
 }
+
+/*.test{*/
+    /*transition-delay: 1s;*/
+    /*transition: width 2s;*/
+
+/*}*/
